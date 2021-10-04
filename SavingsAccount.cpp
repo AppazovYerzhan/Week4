@@ -5,16 +5,15 @@ SavingsAccount::SavingsAccount(): interestRateForDollars(10), interestRateForEur
 
 
 
-void SavingsAccount::deposit(string currency){
+void SavingsAccount::deposit(string currency){          //function that increases money by some interest according to currency
     if (currency=="dollars" || currency=="dollar"){
     SavingsAccount::setDollars(getDollars() * (1.0+(double(interestRateForDollars)/100.0)) );
-
     }
-    if (currency=="euros" || currency=="euro"){
-    SavingsAccount::setEuros(getEuros() * (1.0+(double(interestRateForEuros)/100.0)) );
+    if (currency=="euros" || currency=="euro") {
+        SavingsAccount::setEuros(getEuros() * (1.0 + (double(interestRateForEuros) / 100.0)));
     }
-    if (currency=="tenges" || currency=="tenge"){
-    SavingsAccount::setTenge(getTenge() * (1.0+(double(interestRateForTenge)/100.0)) );
+    if (currency=="tenges" || currency=="tenge") {
+        SavingsAccount::setTenge(getTenge() * (1.0+(double(interestRateForTenge)/100.0)) );
     }
 }
 

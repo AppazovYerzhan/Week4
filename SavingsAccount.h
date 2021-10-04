@@ -29,7 +29,7 @@ public:
 
     void setInterestRate(int interestRate);
 
-    void deposit(string currency);
+    void deposit(string currency);                  //function that increases money by some interest
 };
 
 

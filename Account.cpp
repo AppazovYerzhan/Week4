@@ -41,9 +41,9 @@ void Account::setTenge(double tenge) {
     Account::tenge = tenge;
 }
 
-Account::Account(): name("Unnamed Account"), balance(0), dollars(0), euros(0), tenge(0){}
+Account::Account(): name("Unnamed Account"), balance(0), dollars(0), euros(0), tenge(0){}                            //default constructor that sets every attributes as "0"
 
-Account::Account(const string &name, double balance, double dollars, double euros, double tenge) : name(name),
+Account::Account(const string &name, double balance, double dollars, double euros, double tenge) : name(name),          //constructor that sets according to values specified by user
                                                                                                    balance(balance),
                                                                                                    dollars(dollars),
                                                                                                    euros(euros),

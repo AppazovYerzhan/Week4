@@ -13,9 +13,9 @@ double euros;
 double tenge;
 
 public:
-    Account();
+    Account();  //default constructor
 
-    Account(const string &name, double balance, double dollars, double euros, double tenge);
+    Account(const string &name, double balance, double dollars, double euros, double tenge);       //constructor that sets values specified by user
 
     void withdraw();
     void deposit();
