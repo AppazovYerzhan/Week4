@@ -3,6 +3,7 @@
 #include "Account.h"
 #include "SavingsAccount.h"
 #include "CheckingAccount.h"
+#include "TrustAccount.h"
 
 using namespace std;
 
@@ -18,9 +19,12 @@ int main() {
 //    cout<<savingsAccount.getTenge()<<endl;
 
                                                         //Task 1.2
-    CheckingAccount checkingAccount = CheckingAccount();
-    checkingAccount.setEuros(1000);
-    checkingAccount.withdraw(50, "euro");
-    cout<<checkingAccount.getEuros()<<endl;
+//    CheckingAccount checkingAccount = CheckingAccount();
+//    checkingAccount.setEuros(1000);
+//    checkingAccount.withdraw(50, "euro");
+//    cout<<checkingAccount.getEuros()<<endl;
+                                                        //Task 1.3
+ TrustAccount trustAccount = TrustAccount();
+
         return 0;
 }
