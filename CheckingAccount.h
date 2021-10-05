@@ -11,9 +11,9 @@ private:
 public:
     CheckingAccount(); //default constructor
 
-    CheckingAccount(const string &name, double balance, double dollars, double euros, double tenge, double fee);      //constructor that fills all attributes
-
     void withdraw(int cash, string currency);   //function to get money from balance with specific fee
+
+    void deposit(string currency);
 
     void setFee(double fee);
 

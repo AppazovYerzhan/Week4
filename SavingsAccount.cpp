@@ -1,9 +1,6 @@
-
 #include "SavingsAccount.h"
 
 SavingsAccount::SavingsAccount(): interestRateForDollars(10), interestRateForEuros(10), interestRateForTenge(10){}
-
-
 
 void SavingsAccount::deposit(string currency){          //function that increases money by some interest according to currency
     if (currency=="dollars" || currency=="dollar"){
@@ -16,15 +13,14 @@ void SavingsAccount::deposit(string currency){          //function that increase
         SavingsAccount::setTenge(getTenge() * (1.0+(double(interestRateForTenge)/100.0)) );
     }
 }
+void SavingsAccount::withdraw(int cash, string currency){}
 
 int SavingsAccount::getInterestRateForDollars() const {
     return interestRateForDollars;
 }
-
 int SavingsAccount::getInterestRateForEuros() const {
     return interestRateForEuros;
 }
-
 int SavingsAccount::getInterestRateForTenge() const {
     return interestRateForTenge;
 }
@@ -32,11 +28,9 @@ int SavingsAccount::getInterestRateForTenge() const {
 void SavingsAccount::setInterestRateForDollars(int interestRateForDollars) {
     SavingsAccount::interestRateForDollars = interestRateForDollars;
 }
-
 void SavingsAccount::setInterestRateForEuros(int interestRateForEuros) {
     SavingsAccount::interestRateForEuros = interestRateForEuros;
 }
-
 void SavingsAccount::setInterestRateForTenge(int interestRateForTenge) {
     SavingsAccount::interestRateForTenge = interestRateForTenge;
 }

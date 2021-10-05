@@ -12,7 +12,9 @@ private:
     int bonusForEuros;                      //the amount of bonus for deposit more than 1000
     int bonusForTenge;                      //the amount of bonus for deposit more than 1000
 public:
-    void deposit(string currency);
+    void deposit(string currency);                  //function that increases money by some interest
+
+    void withdraw(int cash, string currency);
 
     void setBonus(double bonus);
 
@@ -21,8 +23,6 @@ public:
     void setBonusForEuros(int bonusForEuros);
 
     void setBonusForTenge(int bonusForTenge);
-
-    TrustAccount(double bonus, int bonusForDollars, int bonusForEuros, int bonusForTenge);
 
     TrustAccount();
 

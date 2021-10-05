@@ -1,7 +1,5 @@
 #include "CheckingAccount.h"
 
-CheckingAccount::CheckingAccount(const string &name, double balance, double dollars, double euros, double tenge,
-                                 double fee) : Account(name, balance, dollars, euros, tenge), fee(fee){}        //constructor that contain all attributes
 
 CheckingAccount::CheckingAccount() : fee(1.5){}                                                                  //default constructor
 
@@ -13,7 +11,7 @@ void CheckingAccount::setFee(double fee) {
     CheckingAccount::fee = fee;
 }
 
-void CheckingAccount::withdraw(int cash, string currency){                                                   //function to get money from balance with specific fee
+ void CheckingAccount::withdraw(int cash, string currency) {                                                   //function to get money from balance with specific fee
     double commission = cash * (getFee()/100.0);                                                             //variable that calculate and store the value for commission for specific cash and fee
     if (currency=="dollars" || currency=="dollar"){
         CheckingAccount::setDollars(CheckingAccount::getDollars() - cash - commission);
@@ -28,3 +26,4 @@ void CheckingAccount::withdraw(int cash, string currency){                      
         cout<<cash<<"tg "<<"has been withdrawn. The commission for procedure is: "<<commission<<"tg"<<endl;
     }
 }
+void CheckingAccount::deposit(string currency){}

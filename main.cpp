@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include "Account.h"
 #include "SavingsAccount.h"
 #include "CheckingAccount.h"
 #include "TrustAccount.h"
@@ -24,14 +23,17 @@ int main() {
 //    checkingAccount.withdraw(50, "euro");
 //    cout<<checkingAccount.getEuros()<<endl;
                                                         //Task 1.3
- TrustAccount trustAccount = TrustAccount();
-trustAccount.setEuros(1000);
-    trustAccount.deposit("euro");
-    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
-    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
-    trustAccount.deposit("euro");
-    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
-    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
+// TrustAccount trustAccount = TrustAccount();
+//trustAccount.setEuros(1000);
+//    trustAccount.deposit("euro");
+//    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
+//    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
+//    trustAccount.deposit("euro");
+//    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
+//    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
+
+                                                        //Task 2.1
+/*Functions deposit() and withdraw() are now pure virtual and daughter classes rae inherited these functions*/
 
         return 0;
 }

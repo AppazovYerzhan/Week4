@@ -48,9 +48,3 @@ Account::Account(const string &name, double balance, double dollars, double euro
                                                                                                    dollars(dollars),
                                                                                                    euros(euros),
                                                                                                    tenge(tenge) {}
-  void withdraw(){
-    cout<<"No actions has been done due to the location of the method in Account class";
-}
-  void deposit(){
-    cout<<"No actions has been done due to the location of the method in Account class";
-}

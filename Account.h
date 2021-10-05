@@ -17,8 +17,8 @@ public:
 
     Account(const string &name, double balance, double dollars, double euros, double tenge);       //constructor that sets values specified by user
 
-    void withdraw();
-    void deposit();
+     virtual void withdraw(int cash, string currency) = 0;
+     virtual void deposit(string currency) = 0;
 
     const string &getName() const;
 
@@ -39,6 +39,7 @@ public:
     void setEuros(double euros);
 
     void setTenge(double tenge);
+
 };
 
 

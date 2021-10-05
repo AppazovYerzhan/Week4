@@ -32,15 +32,9 @@ int TrustAccount::getBonusForTenge() const {
     return bonusForTenge;
 }
 
-TrustAccount::TrustAccount(double bonus, int bonusForDollars, int bonusForEuros, int bonusForTenge) : bonus(bonus),
-                                                                                                   bonusForDollars(
-                                                                                                           bonusForDollars),
-                                                                                                   bonusForEuros(
-                                                                                                           bonusForEuros),
-                                                                                                   bonusForTenge(
-                                                                                                           bonusForTenge)  {}
 TrustAccount::TrustAccount() : bonus(0), bonusForDollars(10), bonusForEuros(10), bonusForTenge(10) {}
 
+void TrustAccount::withdraw(int cash, string currency){};
 
     void TrustAccount::deposit(string currency){          //function that increases money by some interest according to currency and adds some bonus if deposit money
                                                           //more than '1000'
