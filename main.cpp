@@ -25,6 +25,13 @@ int main() {
 //    cout<<checkingAccount.getEuros()<<endl;
                                                         //Task 1.3
  TrustAccount trustAccount = TrustAccount();
+trustAccount.setEuros(1000);
+    trustAccount.deposit("euro");
+    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
+    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
+    trustAccount.deposit("euro");
+    cout<<"Bonus: "<<trustAccount.getBonus()<<endl;
+    cout<<"Balance in Euros: "<<trustAccount.getEuros()<<endl<<endl;
 
         return 0;
 }
