@@ -10,38 +10,37 @@
 using namespace std;
 
 int main() {
-                                                        //Task 1.1
 
 
     I_Printable printable = *new I_Printable();
 
-    Redistribution *redis = new Redistribution();
+    Redistribution *redis = new Redistribution(); //Created object
 
-    SavingsAccount savingsAccount = SavingsAccount();
+    SavingsAccount savingsAccount = SavingsAccount(); //First account
     savingsAccount.setTenge(100);
     savingsAccount.deposit("tenge");
     savingsAccount.deposit("tenge");
 
 
-    redis->accounts.push_back(&savingsAccount);
+    redis->accounts.push_back(&savingsAccount); //Storing accounts in vector
 
 
-    SavingsAccount savingsAccount1 = SavingsAccount();
+    SavingsAccount savingsAccount1 = SavingsAccount(); //Second account
     savingsAccount.setTenge(200);
     savingsAccount.deposit("dollar");
     savingsAccount.deposit("dollar");
 
-    redis->accounts.push_back(&savingsAccount1);
+    redis->accounts.push_back(&savingsAccount1); //Storing accounts in vector
 
 
-    printable.print(savingsAccount);
+    printable.print(savingsAccount); //Printing savings of accounts
     printable.print(savingsAccount1);
 
 
-    redis->redistribute(1000);
+    redis->redistribute(1000); //There redistributing tenge among accounts
 
 
-    printable.print(savingsAccount);
+    printable.print(savingsAccount); //Then printing after redistributing
     printable.print(savingsAccount1);
 
     //cout<<savingsAccount.getTenge()<<endl;

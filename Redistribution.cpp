@@ -12,6 +12,6 @@ Redistribution::Redistribution(double tenge) : tenge(tenge) {};  //constructor t
 void Redistribution::redistribute(double tenge) {
     double amount = tenge / accounts.size(); //Created amount which store each tenge for accounts
     for(auto &to : accounts){
-        to->setTenge(to->getTenge() + amount);
+        to->setTenge(to->getTenge() + amount); //Setting tenge for each account
     }
 }

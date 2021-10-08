@@ -15,7 +15,7 @@ private:
     double tenge;
 
 public:
-    vector<SavingsAccount*>accounts;
+    vector<SavingsAccount*>accounts; //Creatd vector of accounts
     Redistribution(); //Default constructor
     Redistribution(double tenge);  //constructor that sets value specified by user
     void redistribute(double tenge); //function that redistributes 'tenge' by objects of Account
