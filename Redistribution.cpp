@@ -10,7 +10,7 @@ Redistribution::Redistribution(): tenge(0){}; //default constructor that sets ev
 Redistribution::Redistribution(double tenge) : tenge(tenge) {};  //constructor that sets value specified by user
 
 void Redistribution::redistribute(double tenge) {
-    double amount = tenge / accounts.size();
+    double amount = tenge / accounts.size(); //Created amount which store each tenge for accounts
     for(auto &to : accounts){
         to->setTenge(to->getTenge() + amount);
     }
