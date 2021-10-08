@@ -3,8 +3,8 @@
 //
 
 #include "I_Printable.h"
-#include "Account.h"
-void I_Printable::print(const Account& account) {
-    cout<< "Your total balance: " + to_string(account.getBalance());
-
-};
+#include "SavingsAccount.h"
+I_Printable::I_Printable() {}
+void I_Printable::print(const SavingsAccount& account) {
+    cout<< "Your total balance: " + to_string(account.getEuros()) + " euros, " + to_string(account.getDollars()) + " dollars, " + to_string(account.getTenge()) + " tenge.\n";
+}

@@ -7,14 +7,18 @@
 
 
 #include "Account.h"
+#include <vector>
+#include "SavingsAccount.h"
 
-class Redistribution : public Account{
+class Redistribution{
 private:
     double tenge;
+
 public:
+    vector<SavingsAccount*>accounts;
     Redistribution(); //Default constructor
     Redistribution(double tenge);  //constructor that sets value specified by user
-    void redistribute(double tenge);
+    void redistribute(double tenge); //function that redistributes 'tenge' by objects of Account
 };
 
 
