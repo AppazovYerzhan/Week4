@@ -32,14 +32,16 @@ int main() {
 
     redis->accounts.push_back(&savingsAccount1); //Storing accounts in vector
 
-
+    cout<<"******** Information about deposit ********" << "\n";
+    cout<<"\n";
     printable.print(savingsAccount); //Printing savings of accounts
     printable.print(savingsAccount1);
 
 
     redis->redistribute(1000); //There redistributing tenge among accounts
-
-
+    cout<<"\n";
+    cout<<"******** After redistribution ********" <<"\n";
+    cout<<"\n";
     printable.print(savingsAccount); //Then printing after redistributing
     printable.print(savingsAccount1);
 
